@@ -1,0 +1,141 @@
+.legal-container {
+    min-height: 100vh;
+    padding: 6rem 2rem 2rem;
+    background: #d8dbe2;
+  }
+  
+  .legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #151414;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(242, 187, 5, 0.1);
+    color: #d8dbe2;
+  }
+  
+  .legal-content h1 {
+    font-size: 2.5rem;
+    color: #f2bb05;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .last-updated {
+    text-align: center;
+    color: #727072;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    color: #f2bb05;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #727072;
+  }
+  
+  section h3 {
+    font-size: 1.2rem;
+    color: #fc9e4f;
+    margin: 1rem 0;
+  }
+  
+  section p {
+    color: #d8dbe2;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  section ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
+  
+  section ul li {
+    color: #d8dbe2;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  section ul li::before {
+    content: "•";
+    color: #f2bb05;
+    font-weight: bold;
+    position: absolute;
+    left: -1.5rem;
+  }
+  
+  .contact-info {
+    background: #727072;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: #d8dbe2;
+  }
+  
+  .contact-info p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .legal-container {
+      background: #151414;
+    }
+  
+    .legal-content {
+      background: #727072;
+    }
+  
+    .legal-content h1 {
+      color: #f2bb05;
+    }
+  
+    .last-updated {
+      color: #d8dbe2;
+    }
+  
+    section h2 {
+      color: #f2bb05;
+      border-bottom-color: #d8dbe2;
+    }
+  
+    section h3 {
+      color: #fc9e4f;
+    }
+  
+    section p,
+    section ul li {
+      color: #d8dbe2;
+    }
+  
+    .contact-info {
+      background: #151414;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .legal-container {
+      padding: 5rem 1rem 1rem;
+    }
+  
+    .legal-content {
+      padding: 1.5rem;
+    }
+  
+    .legal-content h1 {
+      font-size: 2rem;
+    }
+  
+    section h2 {
+      font-size: 1.3rem;
+    }
+  }

@@ -1,0 +1,372 @@
+/* General Styles */
+.section-subtitle {
+    text-align: center;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    padding: 5rem 0;
+    background: var(--color-dark);
+  }
+  
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .category-card {
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(43, 45, 66, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category-icon i {
+    font-size: 2.5rem;
+    color: var(--color-orange);
+    margin-bottom: 1rem;
+  }
+  
+  .category-card h3 {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .category-card p {
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+  }
+  
+  .category-link {
+    color: var(--color-orange);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Top Attractions */
+  .top-attractions {
+    padding: 5rem 0;
+    background: var(--color-light);
+  }
+  
+  .attractions-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .attraction-card {
+    background: var(--color-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    color: var(--color-light);
+  }
+  
+  .attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .attraction-content {
+    padding: 1.5rem;
+  }
+  
+  .attraction-content h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .location {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stars {
+    color: var(--color-yellow);
+  }
+  
+  .rating-number {
+    color: #666;
+  }
+  
+  .view-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-orange);
+    color: var(--color-dark);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .view-more:hover {
+    background: var(--color-yellow);
+  }
+  
+  /* Local Experiences */
+  .local-experiences {
+    padding: 5rem 0;
+    background: var(--color-dark);
+  }
+  
+  .experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .experience-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .experience-content {
+    padding: 1.5rem;
+  }
+  
+  .duration {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: var(--color-orange);
+    color: var(--color-dark);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-content h3 {
+    color: var(--color-dark);
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-content p {
+    color: var(--color-gray);
+    margin-bottom: 1rem;
+  }
+  
+  .experience-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: var(--color-accent);
+  }
+  
+  .book-now {
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: var(--color-light);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .book-now:hover {
+    background: var(--color-accent-dark);
+  }
+  
+  /* Travel Tips */
+  .travel-tips {
+    padding: 5rem 0;
+    background: var(--color-light);
+  }
+  
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .tip-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--color-gray);
+  }
+  
+  .tip-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tip-icon i {
+    font-size: 2.5rem;
+    color: #e65100;
+    margin-bottom: 1rem;
+  }
+  
+  .tip-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .tip-card p {
+    color: #666;
+  }
+  
+  /* Photo Gallery */
+  .photo-gallery {
+    padding: 5rem 0;
+    background: #f8f9fa;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .gallery-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .gallery-overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gallery-overlay span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+  
+  .view-all-btn {
+    display: block;
+    width: max-content;
+    margin: 3rem auto 0;
+    padding: 1rem 2rem;
+    background: #e65100;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .view-all-btn:hover {
+    background: #ff6d00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .categories-grid,
+    .attractions-slider,
+    .experiences-grid,
+    .tips-grid,
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .experience-meta {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .categories-grid,
+    .attractions-slider,
+    .experiences-grid,
+    .tips-grid,
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .container {
+      padding: 0 1.5rem;
+    }
+  
+    .attraction-card img,
+    .experience-box img {
+      height: 180px;
+    }
+  }
